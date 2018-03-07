@@ -1,3 +1,4 @@
+import { SET_OPEN } from "../actions/"
 const initialObject = {
     projects:false,
     employment:false,
@@ -6,5 +7,11 @@ const initialObject = {
 }
 
 export default function(state = initialObject, action){
-    return state
+    if(action.type === SET_OPEN){
+        const newState = {...initialObject}
+        newState[action.payload] = true
+        return newState
+    }
+        return state
+    
 }

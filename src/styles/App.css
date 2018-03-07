@@ -3,11 +3,13 @@
   display:flex;
   flex-direction:column;
 }
+.header-nav {
+      background-image: linear-gradient(to top, #222222, #323232, #434343, #545454, #666666);
+}
 
 .App-header {
-  background-color: #222;
-  padding: 50px;
-  color: white;
+  padding: 5vh;
+  color: #5ccfff
 }
 
 
@@ -21,7 +23,6 @@
 }
 
 nav {
-  background-color: #222;
   width: 100vw;
 }
 .flex-container {
@@ -31,17 +32,33 @@ nav {
   margin-right: 15vw;
 }
 .category-link{
-  color:white;
-  background-color:black;
+  color:#54ecc4;
   flex-grow:1;
 }
 .category-link:hover{
-  background-color:blue;
+   color: #5ccfff;
 }
 .category-link.active{
-  background-color:blue;
+  color:#0099c6
 }
 .category-link h4 {
   padding:15px;
   margin:0px;
+}
+@media (max-width:590px) {
+  .flex-container{
+    margin:0px;
+  }
+}
+@media (max-width:415px) {
+  .category-link h4{
+    padding: 5px;
+    font-size: 0.8em;
+  }
+}
+@media (max-width:290px) {
+  .category-link h4{
+    padding: 2px;
+    font-size: 0.6em;
+  }
 }
