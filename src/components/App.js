@@ -46,7 +46,6 @@ const App = ({isOpen, setOpen}) =>  {
         <div className="header-nav">
           <header className="App-header">
             <h1 className="App-title">Ben Hart</h1>
-            <h3 className="App-subtitle">Web Resume</h3>
           </header>
           <nav className="category-nav">
             <div className="flex-container">
