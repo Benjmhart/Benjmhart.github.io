@@ -1,5 +1,6 @@
+import getTags from "../Helpers/getTags"
+
 const courses = {
-    tags: [],
     contents: [
         {
             title: "BFA Performing Arts with Additional Studies in Symbolic Logic",
@@ -112,4 +113,5 @@ const courses = {
         ]
 }
 
+courses.tags = getTags(courses.contents)
 export default courses

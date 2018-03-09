@@ -1,5 +1,6 @@
+import getTags from "../Helpers/getTags"
+
 const roles = {
-    tags: [],
     contents: [
         {
             employer: "AdvancePro Technologies",
@@ -21,7 +22,7 @@ const roles = {
                 "Created manuals and guides for products and organizations"
             ],
             date:"2010-2012",
-            website: false,
+            website: "javascript.void(0)",
             tags: ["Technology", "Communications"]
         },
         {
@@ -33,10 +34,11 @@ const roles = {
                 "Additionally managed our shipping hub for all national business"
             ],
             date:"2008-2010",
-            website: false,
+            website: "javascript.void(0)",
             tags: ["Sales", "Communications"]
         }
         ]
 }
 
+roles.tags = getTags(roles.contents)
 export default roles

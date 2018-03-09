@@ -2,6 +2,7 @@
   text-align: center;
   display:flex;
   flex-direction:column;
+  min-height:100vh;
 }
 .header-nav {
       background-image: linear-gradient(to top, #222222, #323232, #434343, #545454, #666666);
@@ -22,9 +23,7 @@
   font-size: 1em;
 }
 
-nav {
-  width: 100vw;
-}
+
 .flex-container {
   display:flex;
   flex-direction: row;
@@ -45,6 +44,66 @@ nav {
   padding:15px;
   margin:0px;
 }
+.content-container{
+  background-color: #222;
+  flex-grow:1;
+  color:#54ecc4;
+}
+.content-container a {
+  color:#54ecc4;
+}
+.content-container a:hover {
+   color: #5ccfff;
+  
+}
+.content-container a:active {
+  color:#0099c6;
+  
+}
+.project-display{
+  margin-left:15vw;
+  margin-right:15vw;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content:center;
+}
+.employment-display{
+  text-align: left;
+}
+.content-item{
+  margin: 30px;
+}
+.employment-display .content-item {
+  margin: 5vh 15vw 5vh 15vw;
+}
+
+.employment-display .content-item p{
+  margin: 2px 0px;
+}
+.tag-display{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+.tag {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.tag:hover{
+  
+   color: #5ccfff;
+}
+.tag-active{
+  color:#0099c6;
+}
+.tag-inactive{
+  color: #54ecc4;
+}
+
 @media (max-width:590px) {
   .flex-container{
     margin:0px;
