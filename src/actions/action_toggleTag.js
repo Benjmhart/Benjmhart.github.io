@@ -7,7 +7,7 @@ const toggleTag = (tag, type) => {
             type,
             tag
         }
-    } 
+    }
     return action
 }
 

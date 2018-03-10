@@ -6,7 +6,7 @@ export default function(state = courses, action){
     const newState = {...state}
     switch(action.type){
         case TOGGLE_TAG:
-            if(action.payload.type==="employment"){
+            if(action.payload.type==="education"){
                 newState.tags[action.payload.tag] =!newState.tags[action.payload.tag]
             }
         return newState

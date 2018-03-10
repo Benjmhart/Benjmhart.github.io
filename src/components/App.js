@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux'
 import Employment from './Employment'
 import Projects from './Projects'
 import Education from './Education'
-import Contact from './Contact'
 import setOpen from "../actions/action_setOpen"
 import '../styles/App.css';
 
@@ -27,8 +26,6 @@ const App = ({isOpen, setOpen}) =>  {
         return <Projects />
       case "education":
         return <Education />
-      case "contact":
-        return <Contact />
       default:
         return ''
     }
@@ -46,6 +43,8 @@ const App = ({isOpen, setOpen}) =>  {
         <div className="header-nav">
           <header className="App-header">
             <h1 className="App-title">Ben Hart</h1>
+            <h2>Front End Web Developer</h2>
+            <h2><a href="mailto:Benjmhart@gmail.com" >Benjmhart@gmail.com</a></h2>
           </header>
           <nav className="category-nav">
             <div className="flex-container">

@@ -11,7 +11,7 @@ const Employment = ({employment}) => {
         return tree.concat([
         <div className="content-item" key={item.employer}>
             <a href={item.website} target="_blank">
-                <h4>{item.employer}</h4>
+                <h3>{item.employer}</h3>
             </a>
             <p>Date: {item.date}</p>
             {acheivementsList}
@@ -22,7 +22,7 @@ const Employment = ({employment}) => {
     
     return (
         <div className="content employment" >
-         <TagDisplay tags={employment.tags} type="employment"/>
+         <TagDisplay type="employment"/>
          <div className="employment-display">
          {showEmployment}
          </div>

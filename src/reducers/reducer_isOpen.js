@@ -2,8 +2,7 @@ import { SET_OPEN } from "../actions/"
 const initialObject = {
     projects:false,
     employment:false,
-    education: false,
-    contact: false
+    education: false
 }
 
 export default function(state = initialObject, action){

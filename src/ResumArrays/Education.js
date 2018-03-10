@@ -28,7 +28,7 @@ const courses = {
             location: "Wes Bos",
             completion: "2017",
             website: "http://wesbos.com",
-            tags: ["Javascript"]
+            tags: ["JavaScript"]
         },
         
         {
@@ -36,7 +36,7 @@ const courses = {
             location: "Wes Bos",
             completion: "2017",
             website: "http://wesbos.com",
-            tags: ["JavaScript"]
+            tags: ["JavaScript", "React"]
         },
         
         {
@@ -44,7 +44,7 @@ const courses = {
             location: "Wes Bos",
             completion: "2017",
             website: "http://wesbos.com",
-            tags: ["Javascript"]
+            tags: ["JavaScript", "Algorithms"]
         },
         
         {

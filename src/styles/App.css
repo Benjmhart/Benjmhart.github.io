@@ -8,6 +8,11 @@
       background-image: linear-gradient(to top, #222222, #323232, #434343, #545454, #666666);
 }
 
+h2 a{
+   color: #5ccfff;
+  
+}
+
 .App-header {
   padding: 3vh;
   color: #5ccfff
@@ -82,7 +87,23 @@
 .employment-display .content-item p{
   margin: 2px 0px;
 }
+.project-image{
+   height: 192px;
+   width: 320px;
+}
+
+.education-display{
+  text-align: left;
+  margin-top:3vh;
+}
+.education-display .content-item {
+  margin: 2vh 15vw 2vh 15vw;
+}
+.education-display .content-item p,h4,h3{
+  margin: 2px 0px;
+}
 .tag-display{
+  margin: 0 15vw;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -109,15 +130,27 @@
     margin:0px;
   }
 }
-@media (max-width:415px) {
+@media (max-width:450px) {
   .category-link h4{
     padding: 5px;
     font-size: 0.8em;
   }
+  .tag{
+    font-size: 0.8em;
+  }
 }
-@media (max-width:290px) {
+@media (max-width:320px) {
   .category-link h4{
     padding: 2px;
     font-size: 0.6em;
   }
+  
+  .tag{
+    font-size: 0.6em;
+  }
+  
+.project-image{
+   height: 115px;
+   width: 192px;
+}
 }

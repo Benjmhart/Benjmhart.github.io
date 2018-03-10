@@ -18,6 +18,30 @@ import mapimg from "../Assets/map.jpg"
 const showAndTell = {
     contents:[
         {
+           title: "D3 Force Directed Graph",
+           link: "https://benjmhart.github.io/d3-forcechart/",
+           imglink:forceimg,
+           tags:["D3", "SVG"]
+        }, 
+        {
+           title: "Dungeon Game",
+           link: "https://benjmhart.github.io/FCC-react-roguelike/",
+           imglink: dungimg,
+           tags:["React", "Redux", "SASS", "Jest/Enzyme"]
+        }, 
+        {
+           title: "D3 Meteor Map",
+           link: "https://benjmhart.github.io/d3-meteormap/",
+           imglink: mapimg,
+           tags:["D3", "SVG"]
+        }, 
+        {
+           title: "Conway's Game of Life",
+           link: "https://benjmhart.github.io/react-sass-redux-grid-game-of-life/",
+           imglink: lifeimg,
+           tags:["React", "Redux", "SASS"]
+        }, 
+        {
            title: "MarkDown Previewer",
            link: "https://benjmhart.github.io/FCC-React-Sass-Markdown-Previewer/",
            imglink: markdownimg,
@@ -31,24 +55,33 @@ const showAndTell = {
         }, 
         
         {
+           title: "D3 BarChart",
+           link: "https://benjmhart.github.io/d3-barchart/",
+           imglink: barimg,
+           tags:["D3", "SVG"]
+        }, 
+        
+        {
+           title: "D3 ScatterPlot",
+           link: "https://benjmhart.github.io/d3-scatterplot/",
+           imglink: plotimg,
+           tags:["D3", "SVG"]
+        }, 
+        
+        {
+           title: "D3 HeatMap",
+           link: "https://benjmhart.github.io/d3-heatmap/",
+           imglink: heatimg,
+           tags:["D3", "SVG"]
+        }, 
+        
+        {
            title: "Recipe Box",
            link: "https://benjmhart.github.io/fcc-recipebox/",
            imglink: recipeboximg,
            tags:["React", "Animations", "LocalStorage", "SASS"]
         }, 
         
-        {
-           title: "Conway's Game of Life",
-           link: "https://benjmhart.github.io/react-sass-redux-grid-game-of-life/",
-           imglink: lifeimg,
-           tags:["React", "Redux", "SASS"]
-        }, 
-        {
-           title: "Dungeon Game",
-           link: "https://benjmhart.github.io/FCC-react-roguelike/",
-           imglink: dungimg,
-           tags:["React", "Redux", "SASS", "Jest/Enzyme"]
-        }, 
         
         {
            title: "JQuery Calculator",
@@ -71,39 +104,6 @@ const showAndTell = {
            tags:["Jquery", "BootStrap"]
         }, 
         
-        {
-           title: "D3 BarChart",
-           link: "https://benjmhart.github.io/d3-barchart/",
-           imglink: barimg,
-           tags:["D3"]
-        }, 
-        
-        {
-           title: "D3 ScatterPlot",
-           link: "https://benjmhart.github.io/d3-scatterplot/",
-           imglink: plotimg,
-           tags:["D3"]
-        }, 
-        
-        {
-           title: "D3 HeatMap",
-           link: "https://benjmhart.github.io/d3-heatmap/",
-           imglink: heatimg,
-           tags:["D3"]
-        }, 
-        
-        {
-           title: "D3 Force Directed Graph",
-           link: "https://benjmhart.github.io/d3-forcechart/",
-           imglink:forceimg,
-           tags:["D3"]
-        }, 
-        {
-           title: "D3 Meteor Map",
-           link: "https://benjmhart.github.io/d3-meteormap/",
-           imglink: mapimg,
-           tags:["D3"]
-        }, 
         
     ]
 }

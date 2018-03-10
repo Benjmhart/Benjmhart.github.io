@@ -11,7 +11,7 @@ const Projects = ({projects}) => {
         return tree.concat([
         <div className="content-item" key={item.title}>
             <a href={item.website} target="_blank">
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
                 <img src={item.imglink} width="320" height="192" alt={item.title}/>
             </a>
             <p>tags: {item.tags.join(', ')}</p>
