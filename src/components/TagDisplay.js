@@ -8,8 +8,9 @@ const TagDisplay = ({projects, employment, education, type, toggleTag}) => {
     const tags = types[type].tags
     const tagsArr = Object.keys(tags)
     const listTags = tagsArr.map(t => {
+        const check = tags[t] ? ' ✓' : ' ✗'
         const tagClass = tags[t] ? "tag tag-active" : "tag tag-inactive"
-        return <span className={tagClass} key={t} onClick={()=>{toggleTag(t, type)}}>{t}</span>
+        return <span className={tagClass} key={t} onClick={()=>{toggleTag(t, type)}}>{t}{check}</span>
     })
     
     

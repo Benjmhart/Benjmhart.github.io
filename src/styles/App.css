@@ -76,7 +76,7 @@ h2.App-email {
   margin-right:5vw;
   margin-left:auto;
   z-index: 4;
-  margin-top: -55vh;
+  margin-top: -52vh;
 }
 .flex-container {
   display:flex;
@@ -86,19 +86,22 @@ h2.App-email {
   position:relative;
   color:#929292;
   flex-grow:1;
+  margin-top:10px;
+  margin-bottom:10px;
   text-align: right;
   font-size:1.5em;
   font-family: 'Allerta Stencil', Helvetica, sans-serif;
 }
 .category-link:hover{
    color: #005588;
+   cursor:pointer;
 }
 .category-link.active{
   color:#00a2ff
 }
 .category-link h4 {
   position:relative;
-  padding:15px;
+  padding:0px;
   margin:0px;
 }
 .category-link h4:hover{
@@ -115,7 +118,7 @@ h2.App-email {
   position: relative;
   align-items: right;
   justify-content: right;
-  margin-top: 12vh;
+  margin-top: 7vh;
   z-index:7;
   font-weight:bold;
 }
@@ -126,7 +129,7 @@ h2.App-email {
 }
 
 .tag:hover{
-  
+   cursor:pointer;
    color: #005588;
 }
 .tag-active{

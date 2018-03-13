@@ -5,7 +5,7 @@ import Employment from './Employment'
 import Projects from './Projects'
 import Education from './Education'
 import setOpen from "../actions/action_setOpen"
-import About from './AboutMe'
+import AboutMe from './AboutMe'
 import '../styles/App.css';
 
 const App = ({isOpen, setOpen}) =>  {
@@ -28,7 +28,7 @@ const App = ({isOpen, setOpen}) =>  {
       case "education":
         return <Education />
       case "about":
-        return <About />
+        return <AboutMe />
       default:
         return ''
     }
@@ -36,9 +36,8 @@ const App = ({isOpen, setOpen}) =>  {
   
   const makeTabs = tabKeys.map(x => {
     const active = isOpen[x] ? "category-link active" : 'category-link'
-    
-    
-    return <div className={active} key={x} onClick={() => setOpen(x)}><h4>{capFirst(x)}</h4></div>
+    const openDash = isOpen[x] ? "—": ''
+    return <div className={active} key={x} onClick={() => setOpen(x)}><h4>{capFirst(x)}{openDash}</h4></div>
   })
     return (
       <div className="App">
@@ -56,10 +55,6 @@ const App = ({isOpen, setOpen}) =>  {
         </div>
         <div className="content-container">
         {getActive(tabKeys)}
-        </div>
-        <div className="footer">
-          <p><a href='#top'>Back to top</a></p>
-          <p><a href="mailto:Benjmhart@gmail.com" >contact</a></p>
         </div>
       </div>
     );

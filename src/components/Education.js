@@ -1,8 +1,8 @@
 import React from 'react';
-
 import { connect } from 'react-redux'
 import TagDisplay from "./TagDisplay"
 import checkTags from "../Helpers/checkTags"
+import Footer from './Footer'
 
 const Education = ({education}) => {
     const showEducation = education.contents.reduce((tree, item)=>{
@@ -28,8 +28,9 @@ const Education = ({education}) => {
         <div className="content education" >
          <TagDisplay type="education"/>
          <div className="display education-display">
-         {showEducation}
+            {showEducation}
          </div>
+         <Footer />
         </div>
     )
 }

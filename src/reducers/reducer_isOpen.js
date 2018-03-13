@@ -1,9 +1,10 @@
 import { SET_OPEN } from "../actions/"
 const initialObject = {
+    about:true,
     projects:false,
     employment:false,
-    education: false,
-    about:true
+    education: false
+    
 }
 
 export default function(state = initialObject, action){

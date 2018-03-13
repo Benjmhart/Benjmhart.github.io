@@ -1,5 +1,5 @@
 const getTags = (y) => y.reduce((end, contentItem) => {
-        contentItem.tags.forEach(x => end.hasOwnProperty(x) ? '': end[x] = false)
+        contentItem.tags.forEach(x => end.hasOwnProperty(x) ? '': end[x] = true)
         return end
     }, {})
     

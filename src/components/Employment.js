@@ -3,6 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import TagDisplay from "./TagDisplay"
 import checkTags from "../Helpers/checkTags"
+import Footer from './Footer'
 
 const Employment = ({employment}) => {
     const showEmployment = employment.contents.reduce((tree, item, index)=>{
@@ -29,8 +30,9 @@ const Employment = ({employment}) => {
         <div className="content employment" >
          <TagDisplay type="employment"/>
          <div className="display employment-display">
-         {showEmployment}
+            {showEmployment}
          </div>
+         <Footer />
         </div>
     )
 }

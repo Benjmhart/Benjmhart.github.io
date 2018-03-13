@@ -3,6 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import TagDisplay from "./TagDisplay"
 import checkTags from "../Helpers/checkTags"
+import Footer from './Footer'
 
 const Projects = ({ projects }) => {
     const showProjects = projects.contents.reduce((tree, item)=>{
@@ -26,6 +27,7 @@ const Projects = ({ projects }) => {
          <div className="display project-display">
          {showProjects}
          </div>
+         <Footer />
         </div>
     )
 }
