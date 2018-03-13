@@ -5,6 +5,7 @@ import Employment from './Employment'
 import Projects from './Projects'
 import Education from './Education'
 import setOpen from "../actions/action_setOpen"
+import About from './AboutMe'
 import '../styles/App.css';
 
 const App = ({isOpen, setOpen}) =>  {
@@ -26,6 +27,8 @@ const App = ({isOpen, setOpen}) =>  {
         return <Projects />
       case "education":
         return <Education />
+      case "about":
+        return <About />
       default:
         return ''
     }
@@ -37,14 +40,13 @@ const App = ({isOpen, setOpen}) =>  {
     
     return <div className={active} key={x} onClick={() => setOpen(x)}><h4>{capFirst(x)}</h4></div>
   })
-  
     return (
       <div className="App">
         <div className="header-nav">
           <header className="App-header">
             <h1 className="App-title">Ben Hart</h1>
-            <h2>Front End Web Developer</h2>
-            <h2><a href="mailto:Benjmhart@gmail.com" >Benjmhart@gmail.com</a></h2>
+            <h2 className="App-subtitle">Front End Web Developer</h2>
+            <h2 className="App-email"><a href="mailto:Benjmhart@gmail.com" >Benjmhart@gmail.com</a></h2>
           </header>
           <nav className="category-nav">
             <div className="flex-container">
@@ -54,6 +56,10 @@ const App = ({isOpen, setOpen}) =>  {
         </div>
         <div className="content-container">
         {getActive(tabKeys)}
+        </div>
+        <div className="footer">
+          <p><a href='#top'>Back to top</a></p>
+          <p><a href="mailto:Benjmhart@gmail.com" >contact</a></p>
         </div>
       </div>
     );

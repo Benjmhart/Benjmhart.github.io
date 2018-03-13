@@ -9,12 +9,17 @@ const Education = ({education}) => {
         if(!checkTags(item.tags, education.tags)){return tree}
         return tree.concat([
         <div className="content-item" key={item.title}>
-            <a href={item.website} target="_blank">
-                <h3>{item.title}</h3>
-                <h4>{item.location}</h4>
-            </a>
-            <p>Completion: {item.completion}</p>
-            <p>tags: {item.tags.join(', ')}</p>
+            <div className="image-div">
+                <img className="class-image" src={item.img} alt={item.title} />
+            </div>
+            <div className="class-text">
+                <a href={item.website} target="_blank">
+                    <h3>{item.title}</h3>
+                    <h4>{item.location}</h4>
+                </a>
+                <p>Completion: {item.completion}</p>
+                <p>tags: {item.tags.join(', ')}</p>
+            </div>
         </div>
         ])
     }, [])
@@ -22,7 +27,7 @@ const Education = ({education}) => {
     return (
         <div className="content education" >
          <TagDisplay type="education"/>
-         <div className="education-display">
+         <div className="display education-display">
          {showEducation}
          </div>
         </div>

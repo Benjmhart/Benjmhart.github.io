@@ -11,6 +11,8 @@ const TagDisplay = ({projects, employment, education, type, toggleTag}) => {
         const tagClass = tags[t] ? "tag tag-active" : "tag tag-inactive"
         return <span className={tagClass} key={t} onClick={()=>{toggleTag(t, type)}}>{t}</span>
     })
+    
+    
     return (
         <div className="tag-display" >
             {listTags}

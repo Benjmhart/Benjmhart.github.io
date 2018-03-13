@@ -1,4 +1,7 @@
 import getTags from "../Helpers/getTags"
+import jesco from "../Assets/jesco.svg"
+import self from "../Assets/self.svg"
+import apt from "../Assets/apt.png"
 
 const roles = {
     contents: [
@@ -12,6 +15,7 @@ const roles = {
             ],
             date:"2012-current",
             website: "https://advanceprotech.com/",
+            logo:apt,
             tags: ["Technology", "Management", "Education", "Communications"]
         },
         {
@@ -22,11 +26,12 @@ const roles = {
                 "Created manuals and guides for products and organizations"
             ],
             date:"2010-2012",
-            website: "javascript.void(0)",
+            website: "https://en.wikipedia.org/wiki/Self-employment",
+            logo: self,
             tags: ["Technology", "Communications"]
         },
         {
-            employer: "US Jesco",
+            employer: "Jesco International",
             role: "Regional Sales Manager",
             acheivements: [
                 "Managed a team of up to 15 salespeople across southern Ontario",
@@ -34,7 +39,8 @@ const roles = {
                 "Additionally managed our shipping hub for all national business"
             ],
             date:"2008-2010",
-            website: "javascript.void(0)",
+            website: "https://www.corporationwiki.com/Texas/Carrollton/us-jesco-international-ltd-inc/33274735.aspx",
+            logo: jesco,
             tags: ["Sales", "Communications"]
         }
         ]
