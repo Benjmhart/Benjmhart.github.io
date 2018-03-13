@@ -7,8 +7,8 @@ const AboutMe = () => {
             <h3>Hi there,</h3>
             <p>
                 I'm a front end web developer from Toronto, Canada. I have particular 
-                interests in functional programming, the React ecosystem, Unit testing, 
-                and Data science. My previous experience includes over 6 years in the software and 
+                interests in functional programming, the React ecosystem, unit testing, 
+                and data science. My previous experience includes over 6 years in the software and 
                 enterprise solutions industry.
             </p>
             <p>

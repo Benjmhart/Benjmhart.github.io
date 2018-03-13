@@ -229,6 +229,11 @@ h2.App-email {
   align-items:center;
   text-align:center;
 }
+.content-container{
+  font-family: helvetica, Arial, sans-serif;
+  font-weight:bold;
+}
+
 .employment-display .content-item p{
   margin: 2px 0px;
 }

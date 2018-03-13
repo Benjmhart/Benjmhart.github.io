@@ -5,7 +5,6 @@ import { createStore } from "redux";
 import reducers from "./reducers"
 import './styles/index.css';
 import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(
    reducers, /* preloadedState, */
