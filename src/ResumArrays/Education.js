@@ -139,7 +139,16 @@ const courses = {
             website:"https://code.tutsplus.com/courses/object-oriented-javascript-with-es6",
             img:"https://thumbsplus.tutsplus.com/uploads/users/71/courses/660/preview_image/es6-1.png?height=300&width=300",
             tags: ["Javascript", "OOP"]
-        }
+        },
+        
+        {
+            title:"What the Flexbox? (Wes Bos)",
+            location:"Flexbox.io",
+            completion:"2018",
+            website:"https://flexbox.io/",
+            img:"https://res.cloudinary.com/wesbos/image/fetch/w_700,q_auto,f_auto/https://courses.wesbos.com/images/WTF/share.png",
+            tags: ["CSS", "Flexbox"]
+        },
         ]
 }
 
