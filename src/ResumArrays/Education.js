@@ -124,6 +124,22 @@ const courses = {
             img: "https://udemy-images.udemy.com/course/240x135/1368106_1b2b.jpg",
             tags: ["JavaScript", "D3"]
         },
+        {
+            title:"Object-Oriented Javacript",
+            location:"tutsplus",
+            completion:"2018",
+            website:"https://code.tutsplus.com/courses/object-oriented-javascript",
+            img:"https://thumbsplus.tutsplus.com/legacy-courses/CRS-29.png?height=300&width=300",
+            tags: ["Javascript", "OOP"]
+        },
+        {
+            title:"Object-Oriented Javacript with ES6",
+            location:"tutsplus",
+            completion:"2018",
+            website:"https://code.tutsplus.com/courses/object-oriented-javascript-with-es6",
+            img:"https://thumbsplus.tutsplus.com/uploads/users/71/courses/660/preview_image/es6-1.png?height=300&width=300",
+            tags: ["Javascript", "OOP"]
+        }
         ]
 }
 
